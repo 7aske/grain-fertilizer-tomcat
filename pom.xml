@@ -59,6 +59,11 @@
             <artifactId>tomcat-jsp-api</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-logging-juli</artifactId>
+            <version>9.0.0.M6</version>
+        </dependency>
 	</dependencies>
 
     <scm>
@@ -67,4 +72,12 @@
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
         <tag>HEAD</tag>
     </scm>
+
+    <repositories>
+        <repository>
+            <id>7aske-repository-releases</id>
+            <name>7aske repository</name>
+            <url>https://maven.7aske.xyz/releases</url>
+        </repository>
+    </repositories>
 </project>
